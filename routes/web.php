@@ -18,7 +18,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/home', [OrderController::class, 'index'])->name('home');
+//Route::get('/', [OrderController::class, 'index'])->name('home');
 Route::get('/order', [OrderController::class, 'index']);
 Route::resource('dish',App\Http\Controllers\DishController::class);
 
